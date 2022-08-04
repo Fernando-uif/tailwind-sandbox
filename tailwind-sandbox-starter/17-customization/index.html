@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Customization</title>
-  </head>
- <body
-    class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
-  >
-   
-      <h1 class="text-white text-xl"></h1>
 
-    <script>
-      function showBrowserWidth() {
-        const width = window.innerWidth
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script >
+    module.config = {
+      theme: {
+        screens: {
+          sm: "550px",
+          md: "800px",
+          lg: "950px",
+          xl: "1150px"
+        },
+        fontFamily: {
+          sans: "Inter var, system-ui, sans-serif",
+          serif: "Georgia, Cambria, 'Times New Roman', Times, serif",
+          mono: "Menlo, Monaco, Consolas, 'Courier New', monospace"
 
-        document.querySelector('h1').innerHTML = `Width: ${width}`
+        },
+        extend: {
+          colors: {
+            primary: '#0070f3',
+          }
+        }
       }
+    }
+  </script>
+  <title>Customization</title>
+</head>
 
-      window.onload = showBrowserWidth
-      window.onresize = showBrowserWidth
-    </script>
-  </body>
+<body class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800">
+
+  <h1 class="text-white  border-primary border text-xl"></h1>
+
+  <script>
+    function showBrowserWidth() {
+      const width = window.innerWidth
+
+      document.querySelector('h1').innerHTML = `Width: ${width}`
+    }
+
+    window.onload = showBrowserWidth
+    window.onresize = showBrowserWidth
+  </script>
+</body>
+
 </html>
 
 <!-- Breakpoint Classes

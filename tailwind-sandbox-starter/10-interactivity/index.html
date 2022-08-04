@@ -1,34 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Interactivity</title>
-  </head>
-  <body>
-    <!-- Hover State Styling -->
+<html lang="en" class="scroll-smooth">
 
-    <!-- Focus State Styling -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Interactivity</title>
+</head>
 
-    <!-- Active State Styling -->
+<body>
+  <!-- Hover State Styling -->
+  <button class="bg-black text-white py-3 px-5 rounded lg m-3 hover:bg-orange-400">
+    hello
+  </button>
 
-    <!-- Styling based on parent state -->
+  <!-- Focus State Styling -->
+  <button class="bg-black text-white py-3 px-5 rounded lg m-3 focus:bg-orange-400">
+    hello
+  </button>
 
-    <!-- Pseudo Classes -->
+  <!-- Active State Styling -->
+  <button class="bg-black text-white py-3 px-5 rounded lg m-3 active:bg-orange-400">
+    hello
+  </button>
 
-    <!-- Appearance -->
-    <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+  <!-- Styling based on parent state -->
 
-    <!-- Cursor -->
+  <div class="group block mx-auto rounded-lg p-6  shadow-lg space-y-3 hover:bg-sky-400 ">
+    hello
+    <p class="group-hover:text-orange">This is a text</p>
+    <div class="group-hover:text-white">Hello</div>
+  </div>
+  <!-- smooth scrooll-->
+  <ul>
+    <li class="first:bg-red-200 even:bg-green-400">Item1</li>
+    <li class="first:bg-red-200 even:bg-green-400">Item2</li>
+    <li class="first:bg-red-200 even:bg-green-400">Item3</li>
+    <li class="first:bg-red-200 even:bg-green-400">Item4</li>
+    <li class="first:bg-red-200 even:bg-green-400">Item5</li>
+    <li class="first:bg-red-200 even:bg-green-400">Item6</li>
+  </ul>
 
-    <!-- Resize -->
+  <!-- Appearance -->
+  <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+  
+  
+  <!-- Estaremos colocandole o mejor dicho quitandole las flechas que tienen colocadas en el lado derecho nuestro select -->
+  <select class="appearance-none" name="" id="">
+    <option value="f">
+      Select an option
+    </option>
+    <option value="s">
+      Option 1
+    </option>
+    <option value="f">
+      Option 2
+    </option>
+    <option value="s">
+      Option 3
+    </option>
+  </select>
+  <!-- Cursor -->
+  <button class="bg-yellow-300 block p-2 rounded w-20 hover:bg-blue-300">
+sumit
+  </button>
+  <p class="cursor-pointer">Hola</p>
+  <!-- Resize -->
 
-    <!-- User Select -->
+  <!-- User Select -->
+  <!-- No dejaremos que puedan seleccionar este texto -->
+<div class="select-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. In est dignissimos sint maxime accusamus deserunt possimus suscipit tempore natus perspiciatis mollitia eaque eum inventore hic recusandae non, nisi cum aliquam.</div>
+  <!-- Smooth Scroll Example -->
+  <div>
+    <a href="#item" class="block my-6">Go to item</a>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officiis praesentium error ex libero voluptates dolores assumenda, repudiandae enim, iste beatae mollitia dolor aspernatur et quaerat corrupti consequuntur atque doloribus.
+Tenetur nemo rerum ab dicta nihil esse assumenda sequi, temporibus consectetur impedit, ipsum itaque eum. Reiciendis vero consectetur quisquam, eos sint in! Incidunt quia qui animi adipisci, quo dicta. Delectus?
+Obcaecati voluptatibus voluptatum quos eius modi. Corrupti eum quae ut maxime illo possimus voluptatum. Dolorum explicabo minima animi illum est, vel veritatis quia consequuntur sunt natus, incidunt vero? Laborum, molestiae.
 
-    <!-- Smooth Scroll Example -->
-  </body>
+<div id="item"> <b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus mollitia soluta, assumenda enim autem necessitatibus voluptatibus molestias repudiandae corporis eveniet, harum magnam dolorum eius a quia, incidunt libero voluptates labore?</b> </div>
+minus? Incidunt, laborum possimus eaque nesciunt maxime recusandae cum hic inventore porro rerum, reiciendis beatae.
+Nostrum in, aliquam suscipit nobis dolores error odio necessitatibus consequatur deleniti illo cumque cupiditate cum nisi reiciendis adipisci ipsum repellendus dignissimos quas, vel quos ea maiores. Nihil enim cumque facere.
+Distinctio nihil excepturi officiis, saepe voluptatum dolorem alias ut, dolore vero perferendis ratione voluptates tenetur facilis eaque fugit sunt beatae suscipit accusantium est earum harum placeat quibusdam doloribus. Pariatur, unde?</p>
+  </div>
+</body>
+
 </html>
 
 <!-- Cursor
