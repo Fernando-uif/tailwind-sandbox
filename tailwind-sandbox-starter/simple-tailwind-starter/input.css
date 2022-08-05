@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .select2-dropdown {
+      @apply rounded-b-lg shadow-md;
+    }
+    .select2-search {
+      @apply border border-gray-300 rounded;
+    }
+    .select2-results__group {
+        text-align:center;
+    }
+    /* ... */
+  }
+
+@layer utilities{
+    .algo{
+        @apply text-center;
+        @apply text-gray-900;
+        @apply text-xl;
+        @apply font-bold;
+        @apply mb-4;
+    }
+}
+
+.content-area{
+    @apply bg-green-200;
+    color:red;
+} 
+
+@media screen(xl)  {
+    body {
+        @apply text-white;
+    }
+}
